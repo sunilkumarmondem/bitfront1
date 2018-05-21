@@ -1,0 +1,31 @@
+<div *ngIf="profile">
+
+
+
+<div class="container pt-5">
+	<div class="row">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-9">
+			<div *ngIf="profile">
+				<div class="card" style="width: 40rem;">
+				  <div class="card-body">
+				    <h2 class="card-title" style="color:green;">{{profile.firstname}} </h2>
+				   
+				    <div class="card-text">
+				    	<div><h4>Firstname: {{profile.firstname}}</h4></div>
+				    	<div><h4>Lastname: {{profile.lastname}}</h4></div>
+				    	<div><h4>Email : {{profile.email}}</h4></div>
+				    	<div><h4>Javascript rating : {{profile.javascript}}</h4></div>
+				    	<div><h4>Nodejs rating : {{profile.nodejs}}</h4>
+				    		<div>
+				    			<br>
+				    	<button type="button" class="btn btn-success" value="Goback" (click)="goback()">Goback</button>
+				    </div>
+				    
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

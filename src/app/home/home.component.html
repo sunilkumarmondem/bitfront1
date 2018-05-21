@@ -1,0 +1,29 @@
+
+<div *ngIf="users">
+	<div class="container pt-5">
+		<table class="table table-hover">
+			    <thead>
+			      <tr>
+			      	<th>Index</th>
+			        <th>Firstname</th>
+			        <th>Email</th>
+			        <th>Javascript rating</th>
+			        <th>Nodejs rating</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr *ngFor="let user of users; let i=index">
+			      	<td>{{i + 1}}</td>
+			        <td><a routerLink="/userdetails/{{user._id}}" style="text-decoration: none">{{user.firstname}}</a></td>
+			        <td>{{user.email}}</td>
+			        <td>{{user.javascript}}/5</td>
+			        <td>{{user.nodejs}}/5</td>
+			        
+			      </tr>
+			      
+			      
+			    </tbody>
+  </table>
+	</div>
+</div>			      
+			  
